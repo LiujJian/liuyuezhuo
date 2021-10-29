@@ -4,13 +4,9 @@ int main(){
 	int a=0; int b=0; int c=0; int d=0; int e=0; int f=0; int g=0; int h=0; int j=0; int k=0;
 	scanf("%d", &N);
 	M=N;
-	for(i=0; N>=1; i++){
-		N/=10;
-	}
-	N=M;
-	for(; i>=1; i--){
-		s= N%10;
-		N/=10;
+    for(s=0; N>=1;){
+    	s=N%10;
+    	N/=10;
 	    if(s==0) a++;
 	    if(s==1) b++;
 	    if(s==2) c++;
