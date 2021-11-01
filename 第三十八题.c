@@ -6,17 +6,17 @@ int main (){
 	for(i=0; i<M; i++){
 		scanf("%d", &x);
 		b[i]=x;
-	}//printf("%d", b[M-1]);
+	}
 	for(i=0; i<M; i++){
 		scanf("%d", &x);
 		c[i]=x;
-	}//printf("%d", c[M-1]); 
+	} 
 	for(i=0; i<N; i++){
 		for(j=0; j<M; j++){
 			scanf("%d", &x);
 			a[i][j]=x;
 		}
-	}//printf("%d", a[N-1][M-1]);
+	}
 	for(i=0; i<N; i++){
 		for(j=0; j<M; j++){
 			if(a[i][j]==c[j])
