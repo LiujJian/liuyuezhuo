@@ -1,8 +1,8 @@
 package main
 import("fmt"
  	  "net/http"
+	   "log"
 	  )
-
 type key struct{
 	Name string
 	Password string
@@ -99,4 +99,9 @@ func main(){
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/login/edit", edit)
 	http.HandleFunc("/login/show", show_all)
+
+	err := http.ListenAndServe(":6789", nil)
+	if err != nil {
+		log.Fatal("ListenAndServer:", err)
+	}
 }
